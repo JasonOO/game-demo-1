@@ -99,6 +99,7 @@ animations = [{
 }]
 
 [node name="coin" type="Area2D" unique_id=2025360762]
+z_index = 5
 collision_mask = 2
 script = ExtResource("1_i64fm")
 
