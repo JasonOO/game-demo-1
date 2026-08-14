@@ -16,6 +16,10 @@ func _physics_process(delta: float) -> void:
 
 	# 左右移动
 	var direction := Input.get_axis("move_left", "move_right")
+	if direction>0:
+		$AnimatedSprite2D.flip_h = false
+	if direction<0:
+		$AnimatedSprite2D.flip_h = true
 	if direction:
 		velocity.x = direction * SPEED
 	else:
